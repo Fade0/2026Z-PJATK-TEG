@@ -8,6 +8,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/check-design-tokens.mjs && node scripts/sync-notebooks.mjs",
     "build": "next build",
+    "data:internals": "uv run --with tiktoken --with torch --with transformers scripts/llm_internals_data.py",
     "typecheck": "tsc --noEmit",
     "sync": "node scripts/sync-notebooks.mjs",
     "data": "uv run --with tiktoken --with scikit-learn --with numpy --with fastembed scripts/generate_data.py",

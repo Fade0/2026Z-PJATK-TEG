@@ -17,6 +17,7 @@ export function crumbsFor(pathname: string): Crumb[] {
     return { label: l ? `Zajęcia ${l.n} · ${l.accent} ${l.title}`.trim() : slug, href: l?.ready ? `/zajecia/${slug}/` : undefined };
   };
   if (parts[0] === "dostep-do-llm") return [home, { label: "Dostęp do modeli" }];
+  if (parts[0] === "extra" && parts[1] === "jak-dziala-llm") return [home, { label: "Jak działa Large Language Model?" }];
   if (parts[0] === "zajecia" && parts[1]) return [home, { ...lessonCrumb(parts[1]), href: undefined }];
   if (parts[0] === "notebook" && parts[1]) {
     const isTask = parts[1].endsWith("-zadanie");

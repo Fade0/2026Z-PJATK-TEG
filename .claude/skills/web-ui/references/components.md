@@ -34,6 +34,8 @@ pages        app/**/page.tsx        only compose organisms + content
 | `LessonCard` | lesson tile on the home page |
 | `Markdown` | repo README in site style (single source of truth) |
 | `notebook/NotebookView` | `.ipynb` section by section: markdown, code, saved outputs, plots |
+| `StepControls` + `lib/useStepper.ts` | step-by-step animation: `const s = useStepper(total, { autoplay?, interval? })` → `{ ref, step, total, playing, next, prev, go, reset, toggle }`; `<div ref={s.ref}>` + `<StepControls stepper={s} label={…} slider? />`. Starts on Play or a manual step (default; DESIGN.md: no autoplay); `autoplay: true` plays once on entering view and any manual step stops it, reduced motion shows the last step; `slider` replaces dots for long processes |
+| `StickySteps` | `StepControls` stuck under the navbar while the panel is visible (`<StickySteps stepper={s} … />`, takes `s.ref` itself). Use for animations taller than the viewport; the step description lives in the bar (highlighted, fixed two-line height) |
 
 ## Organisms
 
