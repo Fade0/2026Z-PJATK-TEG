@@ -1,6 +1,7 @@
 "use client";
 
-import { ArrowDown } from "lucide-react";
+import { useLayoutEffect, useRef, useState } from "react";
+import { ArrowDown, ChevronRight } from "lucide-react";
 import raw from "@/data/llm-internals.json";
 import { Panel } from "@/components/ui/Panel";
 import { StickySteps } from "@/components/molecules/StickySteps";
@@ -20,6 +21,12 @@ const PARTS: { name: string; sub?: string; color?: string; add?: boolean; text: 
   { name: "x + MLP", add: true, text: "Drugie połączenie residualne. Wynik idzie do następnego bloku, który ma identyczną budowę, ale inne wagi." },
 ];
 
+// [źródło, cel]: wejście x → x + atencja, x + atencja → x + MLP
+const LINKS: [number, number][] = [
+  [0, 3],
+  [3, 6],
+];
+
 const LAYERS = [
   { when: "Niższe warstwy", what: "forma i części mowy", ex: "„located” to czasownik w formie imiesłowu, „ E” + „iff” + „el” to jedno słowo" },
   { when: "Środkowe warstwy", what: "składnia i relacje", ex: "„of” łączy się z „the city”; „is located” odnosi się do „Tower”" },
@@ -30,36 +37,74 @@ const LAYERS = [
 export function BlockViz() {
   const st = useStepper(PARTS.length, { autoplay: false });
   const s = st.step;
+  // połączenia residualne: od wejścia każdego „⊕” (poprzedni punkt strumienia) do niego samego, rysowane po lewej
+  const wrap = useRef<HTMLDivElement>(null);
+  const boxes = useRef<(HTMLButtonElement | null)[]>([]);
+  const [spans, setSpans] = useState<{ y0: number; y1: number; to: number }[]>([]);
+  useLayoutEffect(() => {
+    const measure = () => {
+      const w = wrap.current;
+      if (!w) return;
+      const top = w.getBoundingClientRect().top;
+      const mid = (i: number) => {
+        const r = boxes.current[i]!.getBoundingClientRect();
+        return r.top + r.height / 2 - top;
+      };
+      setSpans(LINKS.map(([a, b]) => ({ y0: mid(a), y1: mid(b), to: b })));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (wrap.current) ro.observe(wrap.current);
+    return () => ro.disconnect();
+  }, []);
   return (
     <Panel className="p-4 sm:p-6 md:p-8">
       <StickySteps stepper={st} label={PARTS[s].name} />
       <div className="mt-8 grid gap-8 lg:grid-cols-[18rem_1fr] lg:items-start">
-        <ol className="relative flex flex-col items-stretch gap-1 border-l-2 border-dashed border-[var(--line-strong)] pl-4" aria-label="Elementy bloku">
-          {PARTS.map((p, i) => (
-            <li key={i} className="flex flex-col items-center">
-              {i > 0 && <ArrowDown aria-hidden className={cn("mb-1 size-3.5", i <= s ? "text-focus" : "text-fg-subtle")} />}
-              <button
-                type="button"
-                onClick={() => st.go(i)}
-                aria-current={i === s ? "step" : undefined}
-                className={cn(
-                  "w-full rounded-lg border px-3 py-2 text-center text-sm transition-colors",
-                  p.add ? "rounded-full" : "",
-                  i === s ? "border-focus bg-focus/10 text-focus" : p.color ?? "border-[var(--line)] text-fg-muted",
-                  i > s && "opacity-40",
-                )}
+        <div ref={wrap} className="relative pl-7">
+          {spans.map((b, k) => {
+            const lit = s >= b.to;
+            return (
+              <span
+                key={k}
+                aria-hidden
+                className={cn("pointer-events-none absolute left-1 w-6 rounded-l-lg border-y-2 border-l-2 transition-colors", lit ? "border-focus" : "border-dashed border-[var(--line-strong)]")}
+                style={{ top: b.y0, height: b.y1 - b.y0 }}
               >
-                {p.add ? "⊕ " : ""}
-                {p.name}
-                {p.sub && <span className="block font-mono text-[0.7rem] text-fg-subtle">{p.sub}</span>}
-              </button>
-            </li>
-          ))}
-        </ol>
+                <ChevronRight className={cn("absolute -bottom-[0.55rem] -right-1.5 size-4", lit ? "text-focus" : "text-fg-subtle")} />
+              </span>
+            );
+          })}
+          <ol className="flex flex-col items-stretch gap-1" aria-label="Elementy bloku">
+            {PARTS.map((p, i) => (
+              <li key={i} className="flex flex-col items-center">
+                {i > 0 && <ArrowDown aria-hidden className={cn("mb-1 size-3.5", i <= s ? "text-focus" : "text-fg-subtle")} />}
+                <button
+                  ref={(el) => {
+                    boxes.current[i] = el;
+                  }}
+                  type="button"
+                  onClick={() => st.go(i)}
+                  aria-current={i === s ? "step" : undefined}
+                  className={cn(
+                    "w-full rounded-lg border px-3 py-2 text-center text-sm transition-colors",
+                    p.add ? "rounded-full" : "",
+                    i === s ? "border-focus bg-focus/10 text-focus" : p.color ?? "border-[var(--line)] text-fg-muted",
+                    i > s && "opacity-40",
+                  )}
+                >
+                  {p.add ? "⊕ " : ""}
+                  {p.name}
+                  {p.sub && <span className="block font-mono text-[0.7rem] text-fg-subtle">{p.sub}</span>}
+                </button>
+              </li>
+            ))}
+          </ol>
+        </div>
         <div>
           <p className="text-lg">{PARTS[s].name}</p>
           <p className="mt-2 text-fg-muted">{PARTS[s].text}</p>
-          <p className="mt-6 text-sm text-fg-subtle">Przerywana linia po lewej to strumień residualny: omija atencję i MLP, a ich wyniki są do niego dodawane w punktach ⊕.</p>
+          <p className="mt-6 text-sm text-fg-subtle">Linie po lewej to połączenia residualne: stan wchodzący do atencji i do MLP omija je i w punktach ⊕ dodaje się do ich wyniku.</p>
         </div>
       </div>
 

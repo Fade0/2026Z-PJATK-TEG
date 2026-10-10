@@ -50,7 +50,7 @@ export function GradingBar() {
 export function GradeScale() {
   const rows = [...SCALE].reverse(); // od 2 do 5
   return (
-    <div className="grid grid-cols-6 items-end gap-2 sm:gap-3">
+    <div className="grid grid-cols-6 items-end gap-1.5 sm:gap-3">
       {rows.map((s, i) => {
         const upper = i === rows.length - 1 ? 100 : rows[i + 1].from - 1;
         const range = s.from === 0 ? "< 50" : `${s.from}–${upper}`;
@@ -61,11 +61,14 @@ export function GradeScale() {
             whileInView={{ opacity: 1, height: `${5 + i * 1.6}rem` }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col justify-between overflow-hidden rounded-xl border border-[var(--line)] p-3"
+            className="flex flex-col justify-between overflow-hidden rounded-xl border border-[var(--line)] p-1.5 sm:p-3"
             style={{ background: `color-mix(in oklab, var(--color-brand-500) ${8 + i * 9}%, transparent)` }}
           >
-            <span className="font-mono text-2xl font-semibold sm:text-3xl">{s.grade}</span>
-            <span className="font-mono text-xs text-fg-muted">{range} pkt</span>
+            <span className="font-mono text-lg font-semibold sm:text-3xl">{s.grade.replace(".", ",")}</span>
+            <span className="font-mono text-[0.6rem] leading-tight text-fg-muted sm:text-xs">
+              {range}
+              <span className="block sm:inline"> pkt</span>
+            </span>
           </motion.div>
         );
       })}

@@ -78,6 +78,9 @@ export function AttentionViz() {
         </div>
       </div>
 
+      <Callout className="mt-6 mb-2">
+        <span className="text-fg">Zauważ:</span> w warstwie {head.layer + 1}, głowa {head.head + 1} {NOTE[head.kind]}
+      </Callout>
       <div className="mt-8 grid gap-6 lg:grid-cols-[auto_1fr] lg:items-start">
         <div className="overflow-x-auto">
           <p className="font-mono text-sm">P = softmax(Q · Kᵀ / √d + maska)</p>
@@ -111,9 +114,6 @@ export function AttentionViz() {
           </li>
         </ul>
       </div>
-      <Callout className="mt-6">
-        <span className="text-fg">Zauważ:</span> w warstwie {head.layer + 1}, głowa {head.head + 1} {NOTE[head.kind]}
-      </Callout>
     </Panel>
   );
 }
