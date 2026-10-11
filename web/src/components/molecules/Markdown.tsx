@@ -1,13 +1,29 @@
+import { Children, isValidElement, type ReactNode } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { CodeBlock } from "@/components/molecules/CodeBlock";
 import { REPO_BLOB } from "@/lib/paths";
+
+// Tekst nagłówka bez znaczników (np. **pogrubienia** czy `kodu` w tytule).
+const textOf = (node: ReactNode): string =>
+  Children.toArray(node)
+    .map((c) => (typeof c === "string" || typeof c === "number" ? String(c) : isValidElement<{ children?: ReactNode }>(c) ? textOf(c.props.children) : ""))
+    .join("");
+
+// Kotwica jak na GitHubie: małe litery, bez interpunkcji, spacje → "-". Linki #sekcja działają w obu miejscach.
+const slug = (node: ReactNode) =>
+  textOf(node)
+    .toLowerCase()
+    .trim()
+    .replace(/[^\p{L}\p{N}\s_-]/gu, "")
+    .replace(/\s/g, "-");
 
 /**
  * Molekuła: markdown z repo (README) w stylu design systemu. Dzięki temu strona
  * i GitHub pokazują TEN SAM plik — jedno źródło prawdy, zero kopiowania.
  * `baseDir` — folder pliku w repo, żeby względne linki prowadziły na GitHuba.
  * `slides` — nagłówki h2 dostają `data-slide` (nawigacja strzałkami ← →).
+ * Nagłówki h2 i h3 dostają `id` jak na GitHubie, więc linki `#sekcja` z README działają też na stronie.
  */
 export function Markdown({ source, baseDir, slides = false }: { source: string; baseDir: string; slides?: boolean }) {
   const resolve = (href = "") => {
@@ -20,12 +36,16 @@ export function Markdown({ source, baseDir, slides = false }: { source: string; 
 
   const components: Components = {
     h1: () => null, // tytuł strony renderuje hero
-    h2: ({ children, id }) => (
-      <h2 id={id} data-slide={slides ? "" : undefined} className="mt-20 scroll-mt-24 border-t border-[var(--line)] pt-10 text-3xl font-semibold tracking-tight md:text-4xl">
+    h2: ({ children }) => (
+      <h2 id={slug(children)} data-slide={slides ? "" : undefined} className="mt-20 scroll-mt-24 border-t border-[var(--line)] pt-10 text-3xl font-semibold tracking-tight md:text-4xl">
         {children}
       </h2>
     ),
-    h3: ({ children }) => <h3 className="mt-10 text-xl font-semibold">{children}</h3>,
+    h3: ({ children }) => (
+      <h3 id={slug(children)} className="mt-10 scroll-mt-24 text-xl font-semibold">
+        {children}
+      </h3>
+    ),
     p: ({ children }) => <p className="mt-4 leading-relaxed text-fg-muted">{children}</p>,
     a: ({ href, children }) => (
       <a href={resolve(href)} className="text-brand-300 underline decoration-brand-500/40 underline-offset-4 hover:decoration-brand-300">
