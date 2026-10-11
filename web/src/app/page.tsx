@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowDown, ArrowRight, BookOpen, Cpu, KeyRound, Mail, NotebookPen, Presentation, SquarePen } from "lucide-react";
+import { ArrowDown, ArrowRight, Cpu, KeyRound, Mail, NotebookPen, Presentation, SquarePen } from "lucide-react";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { SiteNav } from "@/components/site/SiteNav";
 import { Slide } from "@/components/site/Slide";
 import { LessonCard } from "@/components/molecules/LessonCard";
@@ -27,6 +28,21 @@ const SCHEDULE = [
   { when: "Zajęcia 8", what: "Prezentacje projektów" },
 ];
 
+const EXTRA = [
+  {
+    href: "/dostep-do-llm/",
+    icon: KeyRound,
+    title: "Dostęp do LLM",
+    text: "Copilot, Ollama, Azure, OpenAI i inne opcje: porównanie, konfiguracja i wywołania z Pythona.",
+  },
+  {
+    href: "/extra/jak-dziala-llm/",
+    icon: Cpu,
+    title: "Jak działa Large Language Model?",
+    text: "Schemat sieci, tokenizacja, atencja, trening i generowanie tekstu na animacjach.",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -49,13 +65,8 @@ export default function Home() {
               </a>
             </Button>
             <Button variant="ghost" asChild>
-              <Link href="/dostep-do-llm/">
-                <KeyRound className="size-4" /> Dostęp do LLM
-              </Link>
-            </Button>
-            <Button variant="ghost" asChild>
               <a href={REPO_URL}>
-                <BookOpen className="size-4" /> Notebooki
+                <GitHubLogoIcon className="size-4" /> Repozytorium
               </a>
             </Button>
           </Reveal>
@@ -75,19 +86,24 @@ export default function Home() {
           </div>
           <Reveal delay={0.2} className="mt-10">
             <p className="mb-3 text-xs uppercase tracking-wider text-fg-subtle">Materiały dodatkowe</p>
-            <Link
-              href="/extra/jak-dziala-llm/"
-              className="group flex sm:w-[calc(50%-0.625rem)] items-center gap-5 rounded-2xl border border-brand-500/40 bg-gradient-to-br from-brand-500/15 to-cyan-400/5 p-5 transition-colors hover:border-brand-400 sm:p-6"
-            >
-              <span className="grid size-14 shrink-0 place-items-center rounded-xl bg-brand-500/20 text-brand-300">
-                <Cpu className="size-7" />
-              </span>
-              <span className="flex-1">
-                <span className="block text-xl font-medium">Jak działa Large Language Model?</span>
-                <span className="mt-1 block text-sm text-fg-muted">Schemat sieci, tokenizacja, atencja, trening i generowanie tekstu na animacjach.</span>
-              </span>
-              <ArrowRight className="size-5 shrink-0 text-brand-300 transition-transform group-hover:translate-x-1" />
-            </Link>
+            <div className="grid gap-5 sm:grid-cols-2">
+              {EXTRA.map((e) => (
+                <Link
+                  key={e.href}
+                  href={e.href}
+                  className="group flex items-center gap-5 rounded-2xl border border-brand-500/40 bg-gradient-to-br from-brand-500/15 to-cyan-400/5 p-5 transition-colors hover:border-brand-400 sm:p-6"
+                >
+                  <span className="grid size-14 shrink-0 place-items-center rounded-xl bg-brand-500/20 text-brand-300">
+                    <e.icon className="size-7" />
+                  </span>
+                  <span className="flex-1">
+                    <span className="block text-xl font-medium">{e.title}</span>
+                    <span className="mt-1 block text-sm text-fg-muted">{e.text}</span>
+                  </span>
+                  <ArrowRight className="size-5 shrink-0 text-brand-300 transition-transform group-hover:translate-x-1" />
+                </Link>
+              ))}
+            </div>
           </Reveal>
         </Slide>
 
@@ -133,7 +149,10 @@ export default function Home() {
                   ))}
                 </ul>
                 <p className="mt-4 border-t border-[var(--line)] pt-4 text-sm text-fg-muted">
-                  Projekt prawdopodobnie w zespołach 2–3-osobowych; szczegóły na kolejnych zajęciach.
+                  Projekt w parach, propozycja tematu do 19.12.2026.{" "}
+                  <Link href="/projekt/" className="text-brand-300 underline decoration-brand-500/40 underline-offset-4 hover:decoration-brand-300">
+                    Zasady projektu
+                  </Link>
                 </p>
               </Panel>
             </Reveal>
@@ -154,9 +173,6 @@ export default function Home() {
           </Reveal>
         </Slide>
       </main>
-      <footer className="border-t border-[var(--line)] px-6 py-4 text-center text-xs text-fg-subtle">
-        {COURSE.name} · {COURSE.school} {COURSE.term} · {COURSE.instructor}
-      </footer>
     </>
   );
 }

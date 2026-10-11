@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { BackgroundMesh } from "@/components/site/BackgroundMesh";
 import { PresenterKeys } from "@/components/site/PresenterKeys";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
+import { SiteFooter } from "@/components/site/SiteFooter";
 import "./globals.css";
 
 const sans = Geist({ subsets: ["latin", "latin-ext"], variable: "--font-geist-sans" });
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollProgress />
         <PresenterKeys />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
