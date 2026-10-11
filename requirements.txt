@@ -8,3 +8,7 @@ scikit-learn
 matplotlib
 seaborn
 jupyter
+chromadb
+rank-bm25
+langchain-text-splitters
+sentence-transformers

@@ -21,6 +21,7 @@ pages        app/**/page.tsx        only compose organisms + content
 | `Panel` | every "glass" rectangle: card, window, visualization background |
 | `Eyebrow` | section overline, always mono and uppercase |
 | `Kbd` | keyboard shortcut |
+| `Tex` | LaTeX formula rendered by KaTeX at build time; `display` for a block formula |
 
 ## Molecules (`components/molecules`)
 
@@ -31,6 +32,7 @@ pages        app/**/page.tsx        only compose organisms + content
 | `CodeTabs` | same example in several variants (Radix Tabs, pill with `layoutId`) |
 | `Terminal` | cell output; lines appear on entering viewport; `wrap={false}` for tables |
 | `Callout` (`insight` / `warning`) | one takeaway or one pitfall; max 1 per slide |
+| `Formula` | formula in a panel with a symbol legend: `<Formula tex={String.raw`…`} legend={[[sym, text]]} />` |
 | `LessonCard` | lesson tile on the home page |
 | `Markdown` | repo README in site style (single source of truth) |
 | `notebook/NotebookView` | `.ipynb` section by section: markdown, code, saved outputs, plots |
@@ -50,6 +52,18 @@ pages        app/**/page.tsx        only compose organisms + content
 | `viz/MiniGraph` | knowledge graph drawn edge by edge, highlighted answer path |
 | `viz/HeroConstellation` | home hero decoration from real embeddings |
 | `viz/GradingBar` | 100 points as a segmented bar |
+| `viz/ChunkingViz` | real document split by RecursiveCharacterTextSplitter: chunk_size slider, overlap toggle; overlapping text has a two-colour background (top: previous chunk, bottom: next) |
+| `viz/QuerySpaceViz` | question → embedding → point among 60 chunks (t-SNE) → top-k neighbours |
+| `viz/ChromaRecordsViz` | Chroma record fields, distance sort, `where` filter dims outdated records |
+| `viz/RagPipelineViz` | RAG step by step: question → embedding → top-k with metadata filter → prompt → answer (from notebook output) |
+| `viz/PromptBuildViz` | RAG prompt assembled chunk by chunk with token counter |
+| `viz/TfIdfViz` | TF-IDF worked example: three short documents, one query, tf / df → idf / sum table computed in code |
+| `viz/Bm25StepsViz` | BM25 step by step: tokenization with 6-char stemming, IDF, per-word score sum |
+| `viz/HybridRankViz` | vector / BM25 / RRF rankings of one query side by side; exports `QueryToggle`, `RankRow`, `GOLD` |
+| `viz/RrfStepsViz` | two rankings → 1/(60+pos) → fused order |
+| `viz/RerankViz` | 10 hybrid candidates reordered by a cross-encoder, with rank deltas |
+| `viz/EvalMetricsViz` | hit@1 and MRR accumulated question by question for 4 methods |
+| `viz/JudgeViz` | LLM judge verdicts F/C incl. control cases |
 | `site/SiteNav`, `site/Breadcrumbs`, `site/Slide`, `site/PresenterKeys`, `site/BackgroundMesh` | page frame, breadcrumbs, keyboard navigation |
 | `lesson/HeroTitle` | opening title with word animation |
 

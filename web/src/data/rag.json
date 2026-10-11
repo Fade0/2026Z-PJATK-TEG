@@ -1,0 +1,1980 @@
+{
+ "n_docs": 15,
+ "n_chunks": 60,
+ "chunking": {
+  "doc": "praca-zdalna-2026",
+  "title": "Zasady pracy zdalnej (wersja 2026)",
+  "text": "Polityka obowiązuje od 1 stycznia 2026 r. i zastępuje wersję z 2024 roku.\n\nPracownik może pracować zdalnie do trzech dni w tygodniu. Stałe dni pracy zdalnej ustala się z przełożonym raz na kwartał; zmiana jednorazowa wymaga zgłoszenia w systemie Kadrus najpóźniej dzień wcześniej. Obecność w biurze obowiązuje we wtorki, kiedy odbywają się spotkania całych zespołów.\n\nZa każdy miesiąc, w którym pracownik pracował zdalnie co najmniej 8 dni, przysługuje ryczałt w wysokości 250 zł brutto na pokrycie kosztów internetu i energii. Ryczałt wypłacany jest razem z wynagrodzeniem.\n\nPraca zdalna z zagranicy jest możliwa przez 20 dni roboczych w roku, wyłącznie z krajów Unii Europejskiej, po akceptacji przełożonego i działu HR. Przed wyjazdem trzeba sprawdzić połączenie z VPN.\n\nStanowisko pracy w domu musi spełniać zasady BHP opisane w oświadczeniu, które pracownik podpisuje raz w roku.",
+  "grid": {
+   "100/0": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     169
+    ],
+    [
+     170,
+     269
+    ],
+    [
+     270,
+     366
+    ],
+    [
+     368,
+     462
+    ],
+    [
+     463,
+     558
+    ],
+    [
+     559,
+     574
+    ],
+    [
+     576,
+     668
+    ],
+    [
+     669,
+     767
+    ],
+    [
+     768,
+     772
+    ],
+    [
+     774,
+     872
+    ],
+    [
+     873,
+     884
+    ]
+   ],
+   "100/25": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     169
+    ],
+    [
+     149,
+     245
+    ],
+    [
+     224,
+     320
+    ],
+    [
+     299,
+     366
+    ],
+    [
+     368,
+     462
+    ],
+    [
+     441,
+     535
+    ],
+    [
+     517,
+     574
+    ],
+    [
+     576,
+     668
+    ],
+    [
+     645,
+     744
+    ],
+    [
+     723,
+     772
+    ],
+    [
+     774,
+     872
+    ],
+    [
+     853,
+     884
+    ]
+   ],
+   "100/50": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     169
+    ],
+    [
+     121,
+     216
+    ],
+    [
+     168,
+     263
+    ],
+    [
+     217,
+     312
+    ],
+    [
+     264,
+     356
+    ],
+    [
+     310,
+     366
+    ],
+    [
+     368,
+     462
+    ],
+    [
+     414,
+     506
+    ],
+    [
+     461,
+     558
+    ],
+    [
+     517,
+     574
+    ],
+    [
+     576,
+     668
+    ],
+    [
+     620,
+     718
+    ],
+    [
+     669,
+     767
+    ],
+    [
+     719,
+     772
+    ],
+    [
+     774,
+     872
+    ],
+    [
+     823,
+     884
+    ]
+   ],
+   "150/0": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     223
+    ],
+    [
+     224,
+     366
+    ],
+    [
+     368,
+     516
+    ],
+    [
+     517,
+     574
+    ],
+    [
+     576,
+     722
+    ],
+    [
+     723,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "150/25": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     223
+    ],
+    [
+     205,
+     349
+    ],
+    [
+     327,
+     366
+    ],
+    [
+     368,
+     516
+    ],
+    [
+     499,
+     574
+    ],
+    [
+     576,
+     722
+    ],
+    [
+     710,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "150/50": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     223
+    ],
+    [
+     182,
+     326
+    ],
+    [
+     281,
+     366
+    ],
+    [
+     368,
+     516
+    ],
+    [
+     473,
+     574
+    ],
+    [
+     576,
+     722
+    ],
+    [
+     683,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "150/100": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     223
+    ],
+    [
+     133,
+     280
+    ],
+    [
+     182,
+     326
+    ],
+    [
+     235,
+     366
+    ],
+    [
+     368,
+     516
+    ],
+    [
+     422,
+     558
+    ],
+    [
+     461,
+     574
+    ],
+    [
+     576,
+     722
+    ],
+    [
+     623,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "200/0": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     269
+    ],
+    [
+     270,
+     366
+    ],
+    [
+     368,
+     558
+    ],
+    [
+     559,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "200/25": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     269
+    ],
+    [
+     246,
+     366
+    ],
+    [
+     368,
+     558
+    ],
+    [
+     536,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "200/50": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     269
+    ],
+    [
+     224,
+     366
+    ],
+    [
+     368,
+     558
+    ],
+    [
+     517,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "200/100": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     269
+    ],
+    [
+     170,
+     366
+    ],
+    [
+     368,
+     558
+    ],
+    [
+     461,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "250/0": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     320
+    ],
+    [
+     321,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "250/25": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     320
+    ],
+    [
+     299,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "250/50": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     320
+    ],
+    [
+     281,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "250/100": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     320
+    ],
+    [
+     224,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "300/0": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "300/25": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "300/50": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "300/100": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "350/0": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "350/25": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "350/50": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "350/100": [
+    [
+     0,
+     73
+    ],
+    [
+     75,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "400/0": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "400/25": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "400/50": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "400/100": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "450/0": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "450/25": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "450/50": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "450/100": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "500/0": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "500/25": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "500/50": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "500/100": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "550/0": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     884
+    ]
+   ],
+   "550/25": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     884
+    ]
+   ],
+   "550/50": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     884
+    ]
+   ],
+   "550/100": [
+    [
+     0,
+     366
+    ],
+    [
+     368,
+     884
+    ]
+   ],
+   "600/0": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "600/25": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "600/50": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "600/100": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "650/0": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "650/25": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "650/50": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "650/100": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "700/0": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "700/25": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "700/50": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "700/100": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "750/0": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "750/25": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "750/50": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "750/100": [
+    [
+     0,
+     574
+    ],
+    [
+     576,
+     884
+    ]
+   ],
+   "800/0": [
+    [
+     0,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "800/25": [
+    [
+     0,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "800/50": [
+    [
+     0,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ],
+   "800/100": [
+    [
+     0,
+     772
+    ],
+    [
+     774,
+     884
+    ]
+   ]
+  }
+ },
+ "queries": [
+  {
+   "q": "Ile pieniędzy mogę wydać na kursy i konferencje?",
+   "query_vec": [
+    -0.044,
+    -0.012,
+    -0.015,
+    0.041,
+    -0.075,
+    0.004
+   ],
+   "chunks": {
+    "benefity#0": {
+     "snippet": "Każdy pracownik na umowie o pracę może wybrać kartę sportową. Firma dopłaca 80% jej ceny, pozostałą część potr…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#1": {
+     "snippet": "Prywatna opieka medyczna obejmuje pakiet podstawowy finansowany w całości przez firmę. Rozszerzenie pakietu o …",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#2": {
+     "snippet": "Budżet szkoleniowy wynosi 3000 zł na osobę rocznie. Można go wykorzystać na kursy, konferencje i certyfikaty z…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#3": {
+     "snippet": "Raz w roku, w grudniu, pracownicy otrzymują bon podarunkowy. Pracownicy z co najmniej pięcioletnim stażem mają…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "biuro#0": {
+     "snippet": "Biuro w Krakowie jest otwarte w dni robocze od 7:00 do 20:00. Wejście poza tymi godzinami wymaga zgody adminis…",
+     "rok": 2025,
+     "dzial": "Administracja"
+    },
+    "biuro#1": {
+     "snippet": "Sale konferencyjne rezerwuje się w kalendarzu, dodając salę jako uczestnika spotkania. Rezerwacja dłuższa niż …",
+     "rok": 2025,
+     "dzial": "Administracja"
+    },
+    "delegacje#0": {
+     "snippet": "Podróż służbową zatwierdza przełożony przed wyjazdem, we wniosku w systemie Kadrus. Bilety lotnicze i kolejowe…",
+     "rok": 2026,
+     "dzial": "Finanse"
+    },
+    "delegacje#1": {
+     "snippet": "Dieta za dobę podróży krajowej wynosi 45 zł. Jeśli podróż trwa od 8 do 12 godzin, przysługuje połowa diety. Di…",
+     "rok": 2026,
+     "dzial": "Finanse"
+    },
+    "delegacje#2": {
+     "snippet": "Limit za nocleg w hotelu wynosi 400 zł za dobę w Polsce i 150 euro za granicą. Przekroczenie limitu wymaga zgo…",
+     "rok": 2026,
+     "dzial": "Finanse"
+    },
+    "delegacje#3": {
+     "snippet": "Delegację rozlicza się w ciągu 14 dni od powrotu. Do rozliczenia dołącza się skany faktur i biletów. Za przeja…",
+     "rok": 2026,
+     "dzial": "Finanse"
+    },
+    "lumen-sync-cennik#0": {
+     "snippet": "Ceny netto za użytkownika miesięcznie przy płatności rocznej: - Start: 19 zł, do 10 użytkowników, 100 GB przes…",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-cennik#1": {
+     "snippet": "Przy płatności miesięcznej ceny są wyższe o 20%. Organizacje non-profit i uczelnie otrzymują rabat 50% na plan…",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-limity-api#1": {
+     "snippet": "- plan Firma: 6000 zapytań na minutę, pliki do 20 GB, limit można zwiększyć w umowie.",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "praca-zdalna-2024#2": {
+     "snippet": "Firma nie wypłaca ryczałtu za pracę zdalną. Koszty internetu i energii pokrywa pracownik. Sprzęt służbowy możn…",
+     "rok": 2024,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2026#2": {
+     "snippet": "Za każdy miesiąc, w którym pracownik pracował zdalnie co najmniej 8 dni, przysługuje ryczałt w wysokości 250 z…",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "sprzet#1": {
+     "snippet": "Do pracy w domu można zamówić monitor, klawiaturę i mysz z katalogu sprzętu, raz na trzy lata, w limicie 1500 …",
+     "rok": 2025,
+     "dzial": "IT"
+    }
+   },
+   "vector": [
+    {
+     "id": "delegacje#2",
+     "score": 0.585
+    },
+    {
+     "id": "benefity#2",
+     "score": 0.572
+    },
+    {
+     "id": "lumen-sync-limity-api#1",
+     "score": 0.491
+    },
+    {
+     "id": "sprzet#1",
+     "score": 0.43
+    },
+    {
+     "id": "praca-zdalna-2024#2",
+     "score": 0.429
+    },
+    {
+     "id": "praca-zdalna-2026#2",
+     "score": 0.425
+    }
+   ],
+   "bm25": [
+    {
+     "id": "benefity#2",
+     "score": 6.61
+    },
+    {
+     "id": "biuro#1",
+     "score": 2.9
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#1",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#3",
+     "score": 0.0
+    },
+    {
+     "id": "biuro#0",
+     "score": 0.0
+    }
+   ],
+   "rrf": [
+    {
+     "id": "benefity#2",
+     "score": 0.0325
+    },
+    {
+     "id": "delegacje#2",
+     "score": 0.0305
+    },
+    {
+     "id": "biuro#1",
+     "score": 0.0302
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.0294
+    },
+    {
+     "id": "delegacje#1",
+     "score": 0.029
+    },
+    {
+     "id": "delegacje#3",
+     "score": 0.0288
+    }
+   ],
+   "hybrid10": [
+    "benefity#2",
+    "delegacje#2",
+    "biuro#1",
+    "benefity#0",
+    "delegacje#1",
+    "delegacje#3",
+    "delegacje#0",
+    "benefity#1",
+    "lumen-sync-cennik#0",
+    "lumen-sync-cennik#1"
+   ],
+   "rerank": [
+    {
+     "id": "benefity#2",
+     "score": 0.981
+    },
+    {
+     "id": "delegacje#1",
+     "score": 0.646
+    },
+    {
+     "id": "delegacje#2",
+     "score": 0.527
+    },
+    {
+     "id": "delegacje#3",
+     "score": 0.405
+    },
+    {
+     "id": "lumen-sync-cennik#1",
+     "score": 0.203
+    },
+    {
+     "id": "lumen-sync-cennik#0",
+     "score": 0.188
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.159
+    },
+    {
+     "id": "benefity#1",
+     "score": 0.046
+    },
+    {
+     "id": "delegacje#0",
+     "score": 0.034
+    },
+    {
+     "id": "biuro#1",
+     "score": 0.024
+    }
+   ]
+  },
+  {
+   "q": "Mój komputer jest już stary, kiedy dostanę nowy?",
+   "query_vec": [
+    -0.075,
+    -0.042,
+    0.054,
+    -0.033,
+    0.008,
+    0.058
+   ],
+   "chunks": {
+    "benefity#0": {
+     "snippet": "Każdy pracownik na umowie o pracę może wybrać kartę sportową. Firma dopłaca 80% jej ceny, pozostałą część potr…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#1": {
+     "snippet": "Prywatna opieka medyczna obejmuje pakiet podstawowy finansowany w całości przez firmę. Rozszerzenie pakietu o …",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#2": {
+     "snippet": "Budżet szkoleniowy wynosi 3000 zł na osobę rocznie. Można go wykorzystać na kursy, konferencje i certyfikaty z…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#3": {
+     "snippet": "Raz w roku, w grudniu, pracownicy otrzymują bon podarunkowy. Pracownicy z co najmniej pięcioletnim stażem mają…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "biuro#0": {
+     "snippet": "Biuro w Krakowie jest otwarte w dni robocze od 7:00 do 20:00. Wejście poza tymi godzinami wymaga zgody adminis…",
+     "rok": 2025,
+     "dzial": "Administracja"
+    },
+    "hasla-i-klucze#2": {
+     "snippet": "Zgubienie lub kradzież klucza trzeba zgłosić natychmiast na helpdesk, z priorytetem P2. Dział IT blokuje zgubi…",
+     "rok": 2026,
+     "dzial": "IT"
+    },
+    "ochrona-danych#3": {
+     "snippet": "Wnioski klientów o usunięcie danych realizuje się w ciągu 30 dni.",
+     "rok": 2025,
+     "dzial": "Prawo"
+    },
+    "onboarding#0": {
+     "snippet": "Pierwszego dnia nowa osoba przychodzi do biura na godzinę 9:00. Na recepcji odbiera identyfikator, a dział IT …",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "onboarding#2": {
+     "snippet": "Dostęp do systemów zamawia przełożony najpóźniej tydzień przed rozpoczęciem pracy. Konto w Kadrusie jest aktyw…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2026#1": {
+     "snippet": "Pracownik może pracować zdalnie do trzech dni w tygodniu. Stałe dni pracy zdalnej ustala się z przełożonym raz…",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "sprzet#0": {
+     "snippet": "Pracownik otrzymuje laptopa w jednej z dwóch konfiguracji: standardowej albo dla programistów (więcej pamięci …",
+     "rok": 2025,
+     "dzial": "IT"
+    },
+    "sprzet#1": {
+     "snippet": "Do pracy w domu można zamówić monitor, klawiaturę i mysz z katalogu sprzętu, raz na trzy lata, w limicie 1500 …",
+     "rok": 2025,
+     "dzial": "IT"
+    },
+    "sprzet#3": {
+     "snippet": "Przy odejściu z firmy sprzęt zwraca się w ostatnim dniu pracy. Dane z dysku są usuwane przez dział IT; prywatn…",
+     "rok": 2025,
+     "dzial": "IT"
+    }
+   },
+   "vector": [
+    {
+     "id": "sprzet#0",
+     "score": 0.524
+    },
+    {
+     "id": "sprzet#1",
+     "score": 0.487
+    },
+    {
+     "id": "onboarding#2",
+     "score": 0.461
+    },
+    {
+     "id": "onboarding#0",
+     "score": 0.451
+    },
+    {
+     "id": "sprzet#3",
+     "score": 0.441
+    },
+    {
+     "id": "ochrona-danych#3",
+     "score": 0.426
+    }
+   ],
+   "bm25": [
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 2.95
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#1",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#2",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#3",
+     "score": 0.0
+    },
+    {
+     "id": "biuro#0",
+     "score": 0.0
+    }
+   ],
+   "rrf": [
+    {
+     "id": "hasla-i-klucze#2",
+     "score": 0.0257
+    },
+    {
+     "id": "sprzet#0",
+     "score": 0.0164
+    },
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 0.0164
+    },
+    {
+     "id": "sprzet#1",
+     "score": 0.0161
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.0161
+    },
+    {
+     "id": "onboarding#2",
+     "score": 0.0159
+    }
+   ],
+   "hybrid10": [
+    "hasla-i-klucze#2",
+    "sprzet#0",
+    "praca-zdalna-2026#1",
+    "sprzet#1",
+    "benefity#0",
+    "onboarding#2",
+    "benefity#1",
+    "onboarding#0",
+    "benefity#2",
+    "sprzet#3"
+   ],
+   "rerank": [
+    {
+     "id": "sprzet#0",
+     "score": 0.757
+    },
+    {
+     "id": "sprzet#1",
+     "score": 0.578
+    },
+    {
+     "id": "sprzet#3",
+     "score": 0.452
+    },
+    {
+     "id": "onboarding#0",
+     "score": 0.322
+    },
+    {
+     "id": "onboarding#2",
+     "score": 0.315
+    },
+    {
+     "id": "hasla-i-klucze#2",
+     "score": 0.122
+    },
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 0.025
+    },
+    {
+     "id": "benefity#2",
+     "score": 0.013
+    },
+    {
+     "id": "benefity#1",
+     "score": 0.007
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.005
+    }
+   ]
+  },
+  {
+   "q": "Co oznacza błąd LS-409?",
+   "query_vec": [
+    -0.087,
+    0.035,
+    0.001,
+    0.014,
+    -0.018,
+    -0.026
+   ],
+   "chunks": {
+    "benefity#0": {
+     "snippet": "Każdy pracownik na umowie o pracę może wybrać kartę sportową. Firma dopłaca 80% jej ceny, pozostałą część potr…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#1": {
+     "snippet": "Prywatna opieka medyczna obejmuje pakiet podstawowy finansowany w całości przez firmę. Rozszerzenie pakietu o …",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "benefity#2": {
+     "snippet": "Budżet szkoleniowy wynosi 3000 zł na osobę rocznie. Można go wykorzystać na kursy, konferencje i certyfikaty z…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "delegacje#2": {
+     "snippet": "Limit za nocleg w hotelu wynosi 400 zł za dobę w Polsce i 150 euro za granicą. Przekroczenie limitu wymaga zgo…",
+     "rok": 2026,
+     "dzial": "Finanse"
+    },
+    "lumen-sync-cennik#0": {
+     "snippet": "Ceny netto za użytkownika miesięcznie przy płatności rocznej: - Start: 19 zł, do 10 użytkowników, 100 GB przes…",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-kody-bledow#0": {
+     "snippet": "Kody błędów zwracane przez API i aplikację Lumen Sync: - LS-401: brak albo nieważny klucz API. Należy sprawdzi…",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-kody-bledow#1": {
+     "snippet": "- LS-409: konflikt wersji. Plik zmieniono na innym urządzeniu, zanim zapisano lokalną zmianę. Aplikacja tworzy…",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-kody-bledow#2": {
+     "snippet": "- LS-429: przekroczony limit zapytań na minutę. - LS-503: usługa chwilowo niedostępna. Zgłoszenia od klientów …",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-kody-bledow#3": {
+     "snippet": "W treści każdego błędu jest identyfikator żądania (request id), który klient podaje w zgłoszeniu do wsparcia.",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "lumen-sync-limity-api#2": {
+     "snippet": "Po przekroczeniu limitu API zwraca błąd LS-429 i nagłówek Retry-After z liczbą sekund do odczekania. Klient po…",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "vpn#2": {
+     "snippet": "- VPN-502: serwer bramy jest niedostępny. Zwykle oznacza prace serwisowe; ich harmonogram jest na stronie stat…",
+     "rok": 2026,
+     "dzial": "IT"
+    }
+   },
+   "vector": [
+    {
+     "id": "lumen-sync-kody-bledow#1",
+     "score": 0.546
+    },
+    {
+     "id": "lumen-sync-kody-bledow#0",
+     "score": 0.525
+    },
+    {
+     "id": "lumen-sync-kody-bledow#2",
+     "score": 0.491
+    },
+    {
+     "id": "lumen-sync-limity-api#2",
+     "score": 0.452
+    },
+    {
+     "id": "lumen-sync-kody-bledow#3",
+     "score": 0.333
+    },
+    {
+     "id": "vpn#2",
+     "score": 0.241
+    }
+   ],
+   "bm25": [
+    {
+     "id": "lumen-sync-limity-api#2",
+     "score": 3.83
+    },
+    {
+     "id": "vpn#2",
+     "score": 3.56
+    },
+    {
+     "id": "lumen-sync-kody-bledow#1",
+     "score": 3.08
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#1",
+     "score": 0.0
+    },
+    {
+     "id": "benefity#2",
+     "score": 0.0
+    }
+   ],
+   "rrf": [
+    {
+     "id": "lumen-sync-kody-bledow#1",
+     "score": 0.0323
+    },
+    {
+     "id": "lumen-sync-limity-api#2",
+     "score": 0.032
+    },
+    {
+     "id": "vpn#2",
+     "score": 0.0313
+    },
+    {
+     "id": "delegacje#2",
+     "score": 0.0272
+    },
+    {
+     "id": "lumen-sync-cennik#0",
+     "score": 0.0257
+    },
+    {
+     "id": "lumen-sync-kody-bledow#0",
+     "score": 0.0161
+    }
+   ],
+   "hybrid10": [
+    "lumen-sync-kody-bledow#1",
+    "lumen-sync-limity-api#2",
+    "vpn#2",
+    "delegacje#2",
+    "lumen-sync-cennik#0",
+    "lumen-sync-kody-bledow#0",
+    "lumen-sync-kody-bledow#2",
+    "benefity#0",
+    "lumen-sync-kody-bledow#3",
+    "benefity#1"
+   ],
+   "rerank": [
+    {
+     "id": "lumen-sync-kody-bledow#1",
+     "score": 0.99
+    },
+    {
+     "id": "lumen-sync-kody-bledow#2",
+     "score": 0.514
+    },
+    {
+     "id": "lumen-sync-kody-bledow#0",
+     "score": 0.372
+    },
+    {
+     "id": "lumen-sync-limity-api#2",
+     "score": 0.32
+    },
+    {
+     "id": "lumen-sync-kody-bledow#3",
+     "score": 0.116
+    },
+    {
+     "id": "vpn#2",
+     "score": 0.071
+    },
+    {
+     "id": "delegacje#2",
+     "score": 0.04
+    },
+    {
+     "id": "benefity#1",
+     "score": 0.037
+    },
+    {
+     "id": "benefity#0",
+     "score": 0.022
+    },
+    {
+     "id": "lumen-sync-cennik#0",
+     "score": 0.013
+    }
+   ]
+  },
+  {
+   "q": "Ile dni w tygodniu można pracować zdalnie?",
+   "query_vec": [
+    -0.073,
+    -0.02,
+    0.033,
+    -0.008,
+    -0.024,
+    0.024
+   ],
+   "chunks": {
+    "benefity#2": {
+     "snippet": "Budżet szkoleniowy wynosi 3000 zł na osobę rocznie. Można go wykorzystać na kursy, konferencje i certyfikaty z…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "lumen-sync-limity-api#1": {
+     "snippet": "- plan Firma: 6000 zapytań na minutę, pliki do 20 GB, limit można zwiększyć w umowie.",
+     "rok": 2026,
+     "dzial": "Produkt"
+    },
+    "ochrona-danych#0": {
+     "snippet": "Dane osobowe klientów i pracowników przetwarza się wyłącznie w systemach zatwierdzonych przez inspektora ochro…",
+     "rok": 2025,
+     "dzial": "Prawo"
+    },
+    "onboarding#1": {
+     "snippet": "W pierwszym tygodniu obowiązkowe są: szkolenie BHP (online, ok. 2 godziny), szkolenie z bezpieczeństwa informa…",
+     "rok": 2025,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2024#1": {
+     "snippet": "Pracownik może pracować zdalnie najwyżej dwa dni w tygodniu. Dni pracy zdalnej ustala się z przełożonym z tygo…",
+     "rok": 2024,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2024#2": {
+     "snippet": "Firma nie wypłaca ryczałtu za pracę zdalną. Koszty internetu i energii pokrywa pracownik. Sprzęt służbowy możn…",
+     "rok": 2024,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2026#1": {
+     "snippet": "Pracownik może pracować zdalnie do trzech dni w tygodniu. Stałe dni pracy zdalnej ustala się z przełożonym raz…",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2026#2": {
+     "snippet": "Za każdy miesiąc, w którym pracownik pracował zdalnie co najmniej 8 dni, przysługuje ryczałt w wysokości 250 z…",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2026#3": {
+     "snippet": "Praca zdalna z zagranicy jest możliwa przez 20 dni roboczych w roku, wyłącznie z krajów Unii Europejskiej, po …",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "praca-zdalna-2026#4": {
+     "snippet": "Stanowisko pracy w domu musi spełniać zasady BHP opisane w oświadczeniu, które pracownik podpisuje raz w roku.",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "sprzet#1": {
+     "snippet": "Do pracy w domu można zamówić monitor, klawiaturę i mysz z katalogu sprzętu, raz na trzy lata, w limicie 1500 …",
+     "rok": 2025,
+     "dzial": "IT"
+    },
+    "urlopy#0": {
+     "snippet": "Wniosek o urlop wypoczynkowy składa się w systemie Kadrus co najmniej 14 dni przed planowanym terminem, jeśli …",
+     "rok": 2026,
+     "dzial": "HR"
+    },
+    "urlopy#2": {
+     "snippet": "Plan urlopów na okres wakacyjny (lipiec–sierpień) zespoły uzgadniają do 31 marca. W tym okresie w każdym zespo…",
+     "rok": 2026,
+     "dzial": "HR"
+    }
+   },
+   "vector": [
+    {
+     "id": "praca-zdalna-2024#1",
+     "score": 0.805
+    },
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 0.747
+    },
+    {
+     "id": "praca-zdalna-2026#3",
+     "score": 0.677
+    },
+    {
+     "id": "praca-zdalna-2024#2",
+     "score": 0.66
+    },
+    {
+     "id": "praca-zdalna-2026#4",
+     "score": 0.617
+    },
+    {
+     "id": "praca-zdalna-2026#2",
+     "score": 0.589
+    }
+   ],
+   "bm25": [
+    {
+     "id": "praca-zdalna-2024#1",
+     "score": 9.25
+    },
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 7.22
+    },
+    {
+     "id": "praca-zdalna-2026#2",
+     "score": 5.26
+    },
+    {
+     "id": "praca-zdalna-2024#2",
+     "score": 3.56
+    },
+    {
+     "id": "benefity#2",
+     "score": 3.28
+    },
+    {
+     "id": "lumen-sync-limity-api#1",
+     "score": 2.54
+    }
+   ],
+   "rrf": [
+    {
+     "id": "praca-zdalna-2024#1",
+     "score": 0.0328
+    },
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 0.0323
+    },
+    {
+     "id": "praca-zdalna-2024#2",
+     "score": 0.0312
+    },
+    {
+     "id": "praca-zdalna-2026#2",
+     "score": 0.031
+    },
+    {
+     "id": "sprzet#1",
+     "score": 0.0288
+    },
+    {
+     "id": "praca-zdalna-2026#4",
+     "score": 0.0287
+    }
+   ],
+   "hybrid10": [
+    "praca-zdalna-2024#1",
+    "praca-zdalna-2026#1",
+    "praca-zdalna-2024#2",
+    "praca-zdalna-2026#2",
+    "sprzet#1",
+    "praca-zdalna-2026#4",
+    "urlopy#2",
+    "onboarding#1",
+    "urlopy#0",
+    "ochrona-danych#0"
+   ],
+   "rerank": [
+    {
+     "id": "praca-zdalna-2026#1",
+     "score": 0.999
+    },
+    {
+     "id": "praca-zdalna-2024#1",
+     "score": 0.999
+    },
+    {
+     "id": "praca-zdalna-2026#2",
+     "score": 0.939
+    },
+    {
+     "id": "praca-zdalna-2024#2",
+     "score": 0.825
+    },
+    {
+     "id": "urlopy#0",
+     "score": 0.425
+    },
+    {
+     "id": "urlopy#2",
+     "score": 0.356
+    },
+    {
+     "id": "onboarding#1",
+     "score": 0.186
+    },
+    {
+     "id": "praca-zdalna-2026#4",
+     "score": 0.123
+    },
+    {
+     "id": "sprzet#1",
+     "score": 0.091
+    },
+    {
+     "id": "ochrona-danych#0",
+     "score": 0.01
+    }
+   ]
+  }
+ ]
+}

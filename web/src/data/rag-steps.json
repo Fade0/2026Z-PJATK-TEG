@@ -1,0 +1,916 @@
+{
+ "space": {
+  "points": [
+   {
+    "id": "benefity#0",
+    "doc": "benefity",
+    "dzial": "HR",
+    "x": 0.2548,
+    "y": 0.1428
+   },
+   {
+    "id": "benefity#1",
+    "doc": "benefity",
+    "dzial": "HR",
+    "x": 0.2408,
+    "y": 0.1219
+   },
+   {
+    "id": "benefity#2",
+    "doc": "benefity",
+    "dzial": "HR",
+    "x": 0.3079,
+    "y": 0.1734
+   },
+   {
+    "id": "benefity#3",
+    "doc": "benefity",
+    "dzial": "HR",
+    "x": 0.2449,
+    "y": 0.1724
+   },
+   {
+    "id": "biuro#0",
+    "doc": "biuro",
+    "dzial": "Administracja",
+    "x": 0.6915,
+    "y": 0.0426
+   },
+   {
+    "id": "biuro#1",
+    "doc": "biuro",
+    "dzial": "Administracja",
+    "x": 0.6717,
+    "y": 0.0271
+   },
+   {
+    "id": "biuro#2",
+    "doc": "biuro",
+    "dzial": "Administracja",
+    "x": 0.6815,
+    "y": 0.0
+   },
+   {
+    "id": "biuro#3",
+    "doc": "biuro",
+    "dzial": "Administracja",
+    "x": 0.5476,
+    "y": 0.038
+   },
+   {
+    "id": "delegacje#0",
+    "doc": "delegacje",
+    "dzial": "Finanse",
+    "x": 0.6856,
+    "y": 0.1789
+   },
+   {
+    "id": "delegacje#1",
+    "doc": "delegacje",
+    "dzial": "Finanse",
+    "x": 0.5671,
+    "y": 0.2201
+   },
+   {
+    "id": "delegacje#2",
+    "doc": "delegacje",
+    "dzial": "Finanse",
+    "x": 0.5613,
+    "y": 0.2483
+   },
+   {
+    "id": "delegacje#3",
+    "doc": "delegacje",
+    "dzial": "Finanse",
+    "x": 0.6094,
+    "y": 0.2114
+   },
+   {
+    "id": "hasla-i-klucze#0",
+    "doc": "hasla-i-klucze",
+    "dzial": "IT",
+    "x": 0.5367,
+    "y": 0.5615
+   },
+   {
+    "id": "hasla-i-klucze#1",
+    "doc": "hasla-i-klucze",
+    "dzial": "IT",
+    "x": 0.5134,
+    "y": 0.6266
+   },
+   {
+    "id": "hasla-i-klucze#2",
+    "doc": "hasla-i-klucze",
+    "dzial": "IT",
+    "x": 0.3615,
+    "y": 0.6133
+   },
+   {
+    "id": "hasla-i-klucze#3",
+    "doc": "hasla-i-klucze",
+    "dzial": "IT",
+    "x": 0.4966,
+    "y": 0.5679
+   },
+   {
+    "id": "lumen-sync-cennik#0",
+    "doc": "lumen-sync-cennik",
+    "dzial": "Produkt",
+    "x": 0.0536,
+    "y": 0.9671
+   },
+   {
+    "id": "lumen-sync-cennik#1",
+    "doc": "lumen-sync-cennik",
+    "dzial": "Produkt",
+    "x": 0.0,
+    "y": 0.9659
+   },
+   {
+    "id": "lumen-sync-cennik#2",
+    "doc": "lumen-sync-cennik",
+    "dzial": "Produkt",
+    "x": 0.117,
+    "y": 0.9302
+   },
+   {
+    "id": "lumen-sync-kody-bledow#0",
+    "doc": "lumen-sync-kody-bledow",
+    "dzial": "Produkt",
+    "x": 0.381,
+    "y": 0.9571
+   },
+   {
+    "id": "lumen-sync-kody-bledow#1",
+    "doc": "lumen-sync-kody-bledow",
+    "dzial": "Produkt",
+    "x": 0.3456,
+    "y": 0.93
+   },
+   {
+    "id": "lumen-sync-kody-bledow#2",
+    "doc": "lumen-sync-kody-bledow",
+    "dzial": "Produkt",
+    "x": 0.3892,
+    "y": 0.9178
+   },
+   {
+    "id": "lumen-sync-kody-bledow#3",
+    "doc": "lumen-sync-kody-bledow",
+    "dzial": "Produkt",
+    "x": 0.3503,
+    "y": 0.8817
+   },
+   {
+    "id": "lumen-sync-limity-api#0",
+    "doc": "lumen-sync-limity-api",
+    "dzial": "Produkt",
+    "x": 0.1583,
+    "y": 0.9747
+   },
+   {
+    "id": "lumen-sync-limity-api#1",
+    "doc": "lumen-sync-limity-api",
+    "dzial": "Produkt",
+    "x": 0.1334,
+    "y": 0.9985
+   },
+   {
+    "id": "lumen-sync-limity-api#2",
+    "doc": "lumen-sync-limity-api",
+    "dzial": "Produkt",
+    "x": 0.2923,
+    "y": 0.96
+   },
+   {
+    "id": "lumen-sync-limity-api#3",
+    "doc": "lumen-sync-limity-api",
+    "dzial": "Produkt",
+    "x": 0.215,
+    "y": 1.0
+   },
+   {
+    "id": "ochrona-danych#0",
+    "doc": "ochrona-danych",
+    "dzial": "Prawo",
+    "x": 0.1741,
+    "y": 0.5273
+   },
+   {
+    "id": "ochrona-danych#1",
+    "doc": "ochrona-danych",
+    "dzial": "Prawo",
+    "x": 0.061,
+    "y": 0.5139
+   },
+   {
+    "id": "ochrona-danych#2",
+    "doc": "ochrona-danych",
+    "dzial": "Prawo",
+    "x": 0.1532,
+    "y": 0.5661
+   },
+   {
+    "id": "ochrona-danych#3",
+    "doc": "ochrona-danych",
+    "dzial": "Prawo",
+    "x": 0.0963,
+    "y": 0.5254
+   },
+   {
+    "id": "onboarding#0",
+    "doc": "onboarding",
+    "dzial": "HR",
+    "x": 0.251,
+    "y": 0.3547
+   },
+   {
+    "id": "onboarding#1",
+    "doc": "onboarding",
+    "dzial": "HR",
+    "x": 0.1882,
+    "y": 0.3468
+   },
+   {
+    "id": "onboarding#2",
+    "doc": "onboarding",
+    "dzial": "HR",
+    "x": 0.2191,
+    "y": 0.3698
+   },
+   {
+    "id": "onboarding#3",
+    "doc": "onboarding",
+    "dzial": "HR",
+    "x": 0.1146,
+    "y": 0.3582
+   },
+   {
+    "id": "praca-zdalna-2024#0",
+    "doc": "praca-zdalna-2024",
+    "dzial": "HR",
+    "x": 1.0,
+    "y": 0.3539
+   },
+   {
+    "id": "praca-zdalna-2024#1",
+    "doc": "praca-zdalna-2024",
+    "dzial": "HR",
+    "x": 0.8366,
+    "y": 0.3002
+   },
+   {
+    "id": "praca-zdalna-2024#2",
+    "doc": "praca-zdalna-2024",
+    "dzial": "HR",
+    "x": 0.7568,
+    "y": 0.332
+   },
+   {
+    "id": "praca-zdalna-2026#0",
+    "doc": "praca-zdalna-2026",
+    "dzial": "HR",
+    "x": 0.9721,
+    "y": 0.3694
+   },
+   {
+    "id": "praca-zdalna-2026#1",
+    "doc": "praca-zdalna-2026",
+    "dzial": "HR",
+    "x": 0.8631,
+    "y": 0.3249
+   },
+   {
+    "id": "praca-zdalna-2026#2",
+    "doc": "praca-zdalna-2026",
+    "dzial": "HR",
+    "x": 0.7111,
+    "y": 0.3264
+   },
+   {
+    "id": "praca-zdalna-2026#3",
+    "doc": "praca-zdalna-2026",
+    "dzial": "HR",
+    "x": 0.8156,
+    "y": 0.3611
+   },
+   {
+    "id": "praca-zdalna-2026#4",
+    "doc": "praca-zdalna-2026",
+    "dzial": "HR",
+    "x": 0.8881,
+    "y": 0.3908
+   },
+   {
+    "id": "sprzet#0",
+    "doc": "sprzet",
+    "dzial": "IT",
+    "x": 0.4713,
+    "y": 0.4324
+   },
+   {
+    "id": "sprzet#1",
+    "doc": "sprzet",
+    "dzial": "IT",
+    "x": 0.5094,
+    "y": 0.4311
+   },
+   {
+    "id": "sprzet#2",
+    "doc": "sprzet",
+    "dzial": "IT",
+    "x": 0.3424,
+    "y": 0.5804
+   },
+   {
+    "id": "sprzet#3",
+    "doc": "sprzet",
+    "dzial": "IT",
+    "x": 0.3488,
+    "y": 0.5225
+   },
+   {
+    "id": "urlopy#0",
+    "doc": "urlopy",
+    "dzial": "HR",
+    "x": 0.8091,
+    "y": 0.1773
+   },
+   {
+    "id": "urlopy#1",
+    "doc": "urlopy",
+    "dzial": "HR",
+    "x": 0.8162,
+    "y": 0.1957
+   },
+   {
+    "id": "urlopy#2",
+    "doc": "urlopy",
+    "dzial": "HR",
+    "x": 0.9215,
+    "y": 0.1817
+   },
+   {
+    "id": "urlopy#3",
+    "doc": "urlopy",
+    "dzial": "HR",
+    "x": 0.895,
+    "y": 0.2114
+   },
+   {
+    "id": "vpn#0",
+    "doc": "vpn",
+    "dzial": "IT",
+    "x": 0.7889,
+    "y": 0.6397
+   },
+   {
+    "id": "vpn#1",
+    "doc": "vpn",
+    "dzial": "IT",
+    "x": 0.7787,
+    "y": 0.7161
+   },
+   {
+    "id": "vpn#2",
+    "doc": "vpn",
+    "dzial": "IT",
+    "x": 0.7841,
+    "y": 0.6971
+   },
+   {
+    "id": "vpn#3",
+    "doc": "vpn",
+    "dzial": "IT",
+    "x": 0.8008,
+    "y": 0.6278
+   },
+   {
+    "id": "zglaszanie-awarii#0",
+    "doc": "zglaszanie-awarii",
+    "dzial": "IT",
+    "x": 0.2526,
+    "y": 0.6475
+   },
+   {
+    "id": "zglaszanie-awarii#1",
+    "doc": "zglaszanie-awarii",
+    "dzial": "IT",
+    "x": 0.2717,
+    "y": 0.7357
+   },
+   {
+    "id": "zglaszanie-awarii#2",
+    "doc": "zglaszanie-awarii",
+    "dzial": "IT",
+    "x": 0.3057,
+    "y": 0.7056
+   },
+   {
+    "id": "zglaszanie-awarii#3",
+    "doc": "zglaszanie-awarii",
+    "dzial": "IT",
+    "x": 0.2591,
+    "y": 0.6877
+   },
+   {
+    "id": "zglaszanie-awarii#4",
+    "doc": "zglaszanie-awarii",
+    "dzial": "IT",
+    "x": 0.215,
+    "y": 0.7103
+   }
+  ],
+  "queries": [
+   {
+    "q": "Ile dni w tygodniu można pracować zdalnie?",
+    "x": 0.9,
+    "y": 0.2955,
+    "vec": [
+     -0.073,
+     -0.02,
+     0.033,
+     -0.008,
+     -0.024
+    ],
+    "top": [
+     {
+      "id": "praca-zdalna-2024#1",
+      "cos": 0.805
+     },
+     {
+      "id": "praca-zdalna-2026#1",
+      "cos": 0.747
+     },
+     {
+      "id": "praca-zdalna-2026#3",
+      "cos": 0.677
+     },
+     {
+      "id": "praca-zdalna-2024#2",
+      "cos": 0.66
+     },
+     {
+      "id": "praca-zdalna-2026#4",
+      "cos": 0.617
+     }
+    ]
+   },
+   {
+    "q": "Mój komputer jest już stary, kiedy dostanę nowy?",
+    "x": 0.3977,
+    "y": 0.4157,
+    "vec": [
+     -0.075,
+     -0.042,
+     0.054,
+     -0.033,
+     0.008
+    ],
+    "top": [
+     {
+      "id": "sprzet#0",
+      "cos": 0.524
+     },
+     {
+      "id": "sprzet#1",
+      "cos": 0.487
+     },
+     {
+      "id": "onboarding#2",
+      "cos": 0.461
+     },
+     {
+      "id": "onboarding#0",
+      "cos": 0.451
+     },
+     {
+      "id": "sprzet#3",
+      "cos": 0.441
+     }
+    ]
+   },
+   {
+    "q": "Co oznacza błąd LS-409?",
+    "x": 0.4809,
+    "y": 0.9592,
+    "vec": [
+     -0.087,
+     0.035,
+     0.001,
+     0.014,
+     -0.018
+    ],
+    "top": [
+     {
+      "id": "lumen-sync-kody-bledow#1",
+      "cos": 0.546
+     },
+     {
+      "id": "lumen-sync-kody-bledow#0",
+      "cos": 0.525
+     },
+     {
+      "id": "lumen-sync-kody-bledow#2",
+      "cos": 0.491
+     },
+     {
+      "id": "lumen-sync-limity-api#2",
+      "cos": 0.452
+     },
+     {
+      "id": "lumen-sync-kody-bledow#3",
+      "cos": 0.333
+     }
+    ]
+   }
+  ]
+ },
+ "chroma": {
+  "q": "Ile dni w tygodniu można pracować zdalnie?",
+  "records": [
+   {
+    "id": "praca-zdalna-2024#1",
+    "text": "Pracownik może pracować zdalnie najwyżej dwa dni w tygodniu. Dni pracy zdalnej ustala się z przełożonym z tygodniowym wy…",
+    "vec": [
+     -0.026,
+     0.006,
+     0.023,
+     -0.025
+    ],
+    "dzial": "HR",
+    "rok": 2024,
+    "dist": 0.195
+   },
+   {
+    "id": "praca-zdalna-2026#1",
+    "text": "Pracownik może pracować zdalnie do trzech dni w tygodniu. Stałe dni pracy zdalnej ustala się z przełożonym raz na kwarta…",
+    "vec": [
+     -0.026,
+     -0.045,
+     -0.001,
+     -0.025
+    ],
+    "dzial": "HR",
+    "rok": 2026,
+    "dist": 0.253
+   },
+   {
+    "id": "praca-zdalna-2026#3",
+    "text": "Praca zdalna z zagranicy jest możliwa przez 20 dni roboczych w roku, wyłącznie z krajów Unii Europejskiej, po akceptacji…",
+    "vec": [
+     -0.054,
+     0.004,
+     0.04,
+     -0.037
+    ],
+    "dzial": "HR",
+    "rok": 2026,
+    "dist": 0.323
+   },
+   {
+    "id": "praca-zdalna-2024#2",
+    "text": "Firma nie wypłaca ryczałtu za pracę zdalną. Koszty internetu i energii pokrywa pracownik. Sprzęt służbowy można zabrać d…",
+    "vec": [
+     -0.04,
+     -0.002,
+     0.039,
+     -0.051
+    ],
+    "dzial": "HR",
+    "rok": 2024,
+    "dist": 0.34
+   },
+   {
+    "id": "praca-zdalna-2026#4",
+    "text": "Stanowisko pracy w domu musi spełniać zasady BHP opisane w oświadczeniu, które pracownik podpisuje raz w roku.…",
+    "vec": [
+     -0.085,
+     -0.01,
+     -0.003,
+     0.001
+    ],
+    "dzial": "HR",
+    "rok": 2026,
+    "dist": 0.383
+   },
+   {
+    "id": "praca-zdalna-2026#2",
+    "text": "Za każdy miesiąc, w którym pracownik pracował zdalnie co najmniej 8 dni, przysługuje ryczałt w wysokości 250 zł brutto n…",
+    "vec": [
+     -0.03,
+     -0.009,
+     0.006,
+     -0.051
+    ],
+    "dzial": "HR",
+    "rok": 2026,
+    "dist": 0.411
+   }
+  ]
+ },
+ "bm25": {
+  "q": "Ile pieniędzy mogę wydać na kursy i konferencje?",
+  "raw": [
+   {
+    "word": "ile",
+    "token": null
+   },
+   {
+    "word": "pieniędzy",
+    "token": "pienię"
+   },
+   {
+    "word": "mogę",
+    "token": null
+   },
+   {
+    "word": "wydać",
+    "token": "wydać"
+   },
+   {
+    "word": "na",
+    "token": null
+   },
+   {
+    "word": "kursy",
+    "token": "kursy"
+   },
+   {
+    "word": "i",
+    "token": null
+   },
+   {
+    "word": "konferencje",
+    "token": "konfer"
+   }
+  ],
+  "idf": [
+   {
+    "token": "pienię",
+    "idf": 0.0,
+    "df": 0
+   },
+   {
+    "token": "wydać",
+    "idf": 0.0,
+    "df": 0
+   },
+   {
+    "token": "kursy",
+    "idf": 3.68,
+    "df": 1
+   },
+   {
+    "token": "konfer",
+    "idf": 3.15,
+    "df": 2
+   }
+  ],
+  "n_chunks": 60,
+  "chunks": [
+   {
+    "id": "benefity#2",
+    "total": 6.61,
+    "parts": {
+     "pienię": 0.0,
+     "wydać": 0.0,
+     "kursy": 3.56,
+     "konfer": 3.05
+    }
+   },
+   {
+    "id": "biuro#1",
+    "total": 2.9,
+    "parts": {
+     "pienię": 0.0,
+     "wydać": 0.0,
+     "kursy": 0.0,
+     "konfer": 2.9
+    }
+   },
+   {
+    "id": "benefity#0",
+    "total": 0.0,
+    "parts": {
+     "pienię": 0.0,
+     "wydać": 0.0,
+     "kursy": 0.0,
+     "konfer": 0.0
+    }
+   },
+   {
+    "id": "benefity#1",
+    "total": 0.0,
+    "parts": {
+     "pienię": 0.0,
+     "wydać": 0.0,
+     "kursy": 0.0,
+     "konfer": 0.0
+    }
+   }
+  ]
+ },
+ "rrf": {
+  "q": "Ile pieniędzy mogę wydać na kursy i konferencje?",
+  "vector": [
+   "delegacje#2",
+   "benefity#2",
+   "lumen-sync-limity-api#1",
+   "sprzet#1",
+   "praca-zdalna-2024#2",
+   "praca-zdalna-2026#2"
+  ],
+  "bm25": [
+   "benefity#2",
+   "biuro#1"
+  ],
+  "gold": "benefity"
+ },
+ "prompt": {
+  "q": "Ile dni w tygodniu można pracować zdalnie?",
+  "system": "Odpowiadasz na pytania pracowników na podstawie fragmentów dokumentów firmy.\nKorzystasz wyłącznie z podanego kontekstu. Jeśli kontekst nie zawiera odpowiedzi, piszesz: \"Nie wiem\".\nOdpowiedź: 1-2 zdania po polsku, na końcu identyfikatory źródeł w nawiasach kwadratowych.",
+  "system_tokens": 84,
+  "q_tokens": 17,
+  "context": [
+   {
+    "id": "praca-zdalna-2026#1",
+    "text": "Zasady pracy zdalnej (wersja 2026)\nPracownik może pracować zdalnie do trzech dni w tygodniu. Stałe dni pracy zdalnej ustala się z przełożonym raz na kwartał; zmiana jednorazowa wymaga zgłoszenia w systemie Kadrus najpóźniej dzień wcześniej. Obecność w biurze obowiązuje we wtorki, kiedy odbywają się spotkania całych zespołów.",
+    "tokens": 116
+   },
+   {
+    "id": "praca-zdalna-2026#3",
+    "text": "Zasady pracy zdalnej (wersja 2026)\nPraca zdalna z zagranicy jest możliwa przez 20 dni roboczych w roku, wyłącznie z krajów Unii Europejskiej, po akceptacji przełożonego i działu HR. Przed wyjazdem trzeba sprawdzić połączenie z VPN.",
+    "tokens": 89
+   },
+   {
+    "id": "praca-zdalna-2026#4",
+    "text": "Zasady pracy zdalnej (wersja 2026)\nStanowisko pracy w domu musi spełniać zasady BHP opisane w oświadczeniu, które pracownik podpisuje raz w roku.",
+    "tokens": 57
+   }
+  ]
+ },
+ "eval": [
+  {
+   "q": "Ile dni w tygodniu można pracować zdalnie?",
+   "gold": "praca-zdalna-2026",
+   "ranks": {
+    "wektory": 2,
+    "BM25": 2,
+    "hybryda": 2,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Co oznacza błąd LS-409?",
+   "gold": "lumen-sync-kody-bledow",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 3,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Jak naprawić błąd VPN-719?",
+   "gold": "vpn",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 2,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Ile wynosi dieta za dobę w podróży służbowej po Polsce?",
+   "gold": "delegacje",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Z jakim wyprzedzeniem trzeba złożyć wniosek o dwutygodniowy urlop?",
+   "gold": "urlopy",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Ile kosztuje plan Zespół?",
+   "gold": "lumen-sync-cennik",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Ile zapytań na minutę obsługuje API w najtańszym planie?",
+   "gold": "lumen-sync-limity-api",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Jak długo trzymamy logi z adresami e-mail?",
+   "gold": "ochrona-danych",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "W jakim czasie dyżurny reaguje na krytyczną awarię?",
+   "gold": "zglaszanie-awarii",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Zgubiłem YubiKey, co teraz?",
+   "gold": "hasla-i-klucze",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Mój komputer jest już stary, kiedy dostanę nowy?",
+   "gold": "sprzet",
+   "ranks": {
+    "wektory": 1,
+    "BM25": null,
+    "hybryda": 2,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Jak zarezerwować salę na spotkanie?",
+   "gold": "biuro",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Ile pieniędzy mogę wydać na kursy i konferencje?",
+   "gold": "benefity",
+   "ranks": {
+    "wektory": 2,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Kto pomaga nowej osobie w pierwszych miesiącach?",
+   "gold": "onboarding",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Czy dostanę dopłatę do rachunków za prąd, gdy pracuję z domu?",
+   "gold": "praca-zdalna-2026",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 3,
+    "hybryda": 2,
+    "rerank": 1
+   }
+  },
+  {
+   "q": "Co zrobić, gdy wysłałem dane klienta do złej osoby?",
+   "gold": "ochrona-danych",
+   "ranks": {
+    "wektory": 1,
+    "BM25": 1,
+    "hybryda": 1,
+    "rerank": 1
+   }
+  }
+ ]
+}
