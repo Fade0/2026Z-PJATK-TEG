@@ -42,14 +42,14 @@ Notebooki można uruchomić w przeglądarce, bez instalacji, albo lokalnie:
 | Termin | Nr | Zajęcia | Zakres | Na koniec | Materiały |
 |--------|----|---------|--------|-----------|-----------|
 | przed 1. | 0 | [Dostęp do LLM](00-dostep-do-llm/README.md) | Azure for Students, Ollama, OpenAI, Anthropic, teg-proxy; wywołania z Pythona | — | [instrukcja](00-dostep-do-llm/README.md) |
-| TBA | 1 | [LLM i embeddingi](01-llm-embeddingi/README.md) | - Proces generowania tekstu, tokeny, koszt <br> - Wywołanie modelu z Pythona, prosty agent <br> - Embeddingi, miary podobieństwa, wyszukiwanie wektorowe | **[zadanie](01-llm-embeddingi/zadanie.ipynb)** | [prezentacja](https://adrianstando.github.io/2026Z-PJATK-TEG/zajecia/01-llm-embeddingi/) · [notebook](https://adrianstando.github.io/2026Z-PJATK-TEG/notebook/01-llm-embeddingi/) · [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianstando/2026Z-PJATK-TEG/blob/main/01-llm-embeddingi/notebook.ipynb) |
-| TBA | 2 | [RAG](02-rag/README.md) | - Chunking <br> - Chroma i filtrowanie po metadanych <br> - Wyszukiwanie hybrydowe (BM25) i reranking <br> - Ewaluacja (RAGAS) | — | w przygotowaniu |
-| TBA | 3 | [Agenci](03-agenci/README.md) | - Tool calling <br> - ReAct w LangGraph <br> - Pamięć <br> - Agentic RAG | — | w przygotowaniu |
-| TBA | 4 | [GraphRAG](04-graphrag/README.md) | - Neo4j i Cypher <br> - Ekstrakcja grafu wiedzy przez LLM <br> - Porównanie z RAG <br> - Start projektu | — | w przygotowaniu |
-| TBA | 5 | [MCP i multi-agent](05-mcp-multi-agent/README.md) | - Model Context Protocol, własny serwer MCP <br> - Systemy wieloagentowe | **test** (pytania praktyczne) | w przygotowaniu |
-| TBA | 6 | [Agentic coding](06-agentic-coding/README.md) | - Claude Code, Codex, Copilot <br> - `AGENTS.md`, `CLAUDE.md`, skille, design system <br> - Przegląd kodu wygenerowanego przez agenta <br> - Zespoły na skillathon | — | w przygotowaniu |
-| TBA | 7 | [Skillathon](07-skillathon/README.md) | - Praca w grupach z agentem kodującym | **skillathon** | w przygotowaniu |
-| TBA | 8 | Prezentacje | - Prezentacje i obrona projektów | **prezentacja** | — |
+| 03.10.2026 | 1 | [LLM i embeddingi](01-llm-embeddingi/README.md) | - Proces generowania tekstu, tokeny, koszt <br> - Wywołanie modelu z Pythona, prosty agent <br> - Embeddingi, miary podobieństwa, wyszukiwanie wektorowe | **[zadanie](01-llm-embeddingi/zadanie.ipynb)** | [prezentacja](https://adrianstando.github.io/2026Z-PJATK-TEG/zajecia/01-llm-embeddingi/) · [notebook](https://adrianstando.github.io/2026Z-PJATK-TEG/notebook/01-llm-embeddingi/) · [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianstando/2026Z-PJATK-TEG/blob/main/01-llm-embeddingi/notebook.ipynb) |
+| 17.10.2026 | 2 | [RAG](02-rag/README.md) | - Chunking <br> - Chroma i filtrowanie po metadanych <br> - Wyszukiwanie hybrydowe (BM25) i reranking <br> - Ewaluacja: hit rate, MRR, LLM jako sędzia | **[zadanie](02-rag/zadanie.ipynb)** | [prezentacja](https://adrianstando.github.io/2026Z-PJATK-TEG/zajecia/02-rag/) · [notebook](https://adrianstando.github.io/2026Z-PJATK-TEG/notebook/02-rag/) · [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianstando/2026Z-PJATK-TEG/blob/main/02-rag/notebook.ipynb) |
+| 07.11.2026 | 3 | [Agenci](03-agenci/README.md) | - Tool calling <br> - ReAct w LangGraph <br> - Pamięć <br> - Agentic RAG | — | w przygotowaniu |
+| 21.11.2026 | 4 | [GraphRAG](04-graphrag/README.md) | - Neo4j i Cypher <br> - Ekstrakcja grafu wiedzy przez LLM <br> - Porównanie z RAG <br> - Start projektu | — | w przygotowaniu |
+| 05.12.2026 | 5 | [MCP i multi-agent](05-mcp-multi-agent/README.md) | - Model Context Protocol, własny serwer MCP <br> - Systemy wieloagentowe | **test** (pytania praktyczne) | w przygotowaniu |
+| 19.12.2026 | 6 | [Agentic coding](06-agentic-coding/README.md) | - Claude Code, Codex, Copilot <br> - `AGENTS.md`, `CLAUDE.md`, skille, design system <br> - Przegląd kodu wygenerowanego przez agenta <br> - Zespoły na skillathon | — | w przygotowaniu |
+| 09.01.2027 | 7 | [Skillathon](07-skillathon/README.md) | - Praca w grupach z agentem kodującym | **skillathon** | w przygotowaniu |
+| 23.01.2027 | 8 | Prezentacje | - Prezentacje i obrona projektów | **prezentacja** | — |
 
 ## Zasady oceniania
 
@@ -59,7 +59,7 @@ Składowe zaliczenia (wstępnie, łącznie 100 pkt):
 
 | Składowa | Punkty | Opis |
 |---|---|---|
-| **Projekt** | 50 | stworzenie własnej bazy wiedzy GraphRAG + prezentacja |
+| **Projekt** | 50 | własny system z min. 8 z 12 zagadnień kursu (zespół 3-osobowy: 10) + prezentacja; [szczegóły](projekt/README.md) |
 | **Test** | 30 | zajęcia 5, pytania praktyczne; **warunek zaliczenia: min. 50%** |
 | **Praca na zajęciach** | 12 | zadania do wykonania w trakcie zajęć lub quiz |
 | **Skillathon** | 8 | praca w grupach z agentem kodującym na przedostatnich zajęciach |
@@ -77,10 +77,14 @@ Składowe zaliczenia (wstępnie, łącznie 100 pkt):
 
 ### Projekt
 
-- Prawdopodobnie w zespołach 2–3-osobowych; szczegóły na kolejnych zajęciach.
-- Temat: **GraphRAG**, czyli wiedza z dokumentów zapisana jako graf encji i relacji (Neo4j), z systemem odpowiadającym na pytania wymagające połączenia kilku faktów.
+Pełny opis, lista zagadnień i trzy przykładowe projekty: **[projekt/README.md](projekt/README.md)**.
+
+- Jeden projekt w parach, temat własny do zatwierdzenia przez prowadzącego. Zespół 3-osobowy tylko wtedy, gdy liczba osób w grupie jest nieparzysta.
+- Projekt wykorzystuje co najmniej **8 z 12 zagadnień** z zajęć (m.in. RAG, ewaluacja, agenci, GraphRAG, MCP), a projekt zespołu 3-osobowego co najmniej **10 z 12**.
+- Zgłoszenie zespołu i tematu mailem do **19.12.2026** (`[TEG] propozycja-projektu`). **Mail wysyła jedna osoba, pozostałe osoby z zespołu muszą być w DW.**
+- Oddanie do **22.01.2027, 23:59** (`[TEG] projekt`): prezentacja (PDF), dokumentacja (PDF) i folder z kodem (zip z `.git`, bez `.env`, `.venv`, `__pycache__`, `node_modules`).
 - Korzystanie z agentów kodujących jest dozwolone pod warunkiem rzetelnej konfiguracji: skille, pliki `AGENTS.md` / `CLAUDE.md`, pluginy, opis sposobu pracy w repozytorium i historia commitów pokazująca rozwój projektu.
-- Prezentacja i obrona na zajęciach 8.
+- Prezentacja i obrona na zajęciach 8 (23.01.2027).
 
 ### Zadania mailem
 
@@ -98,6 +102,7 @@ Składowe zaliczenia (wstępnie, łącznie 100 pkt):
 00-dostep-do-llm/     instrukcja dostępu do modeli + przykłady w Pythonie
 01-llm-embeddingi/    notebook do zajęć 1
 0X-.../               kolejne zajęcia (pojawiają się w trakcie semestru)
+projekt/              opis projektu, lista zagadnień i przykładowe projekty
 tools/teg-proxy/      proxy dla subskrypcji: lokalny serwer zgodny z API OpenAI (Copilot / Claude / Codex)
 web/                  strona z prezentacjami (Next.js, statyczny eksport na GitHub Pages)
 .claude/              CLAUDE.md, DESIGN.md (design system strony) i skille dla agenta kodującego

@@ -25,6 +25,10 @@ If an animation can't answer "which process step does it show?", remove it.
 | switching between two views of the same data | keep the same `motion.g` per point and animate its `x`/`y` to new targets (see `EmbeddingSpace` t-SNE ↔ radial) |
 | smooth change of SVG geometry | `useTween` (requestAnimationFrame) over plain attributes (see `ContextSpace`) |
 
+## Step-by-step processes
+
+`useStepper` + `StepControls`/`StickySteps`. Per DESIGN.md (no autoplay) the process starts on Play or a manual step; this is the `useStepper` default.
+
 ## Parameters
 
 - Entrances: `duration 0.7–0.9`, ease `[0.16, 1, 0.3, 1]`.

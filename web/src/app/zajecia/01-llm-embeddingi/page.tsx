@@ -9,6 +9,7 @@ import { CodeBlock } from "@/components/molecules/CodeBlock";
 import { CodeTabs } from "@/components/molecules/CodeTabs";
 import { Terminal } from "@/components/molecules/Terminal";
 import { Callout } from "@/components/molecules/Callout";
+import { ProjectTopics } from "@/components/molecules/ProjectTopics";
 import { Reveal } from "@/components/motion/Reveal";
 import { Panel } from "@/components/ui/Panel";
 import { Badge } from "@/components/ui/Badge";
@@ -17,7 +18,6 @@ import { TokenizerViz } from "@/components/viz/TokenizerViz";
 import { EmbeddingSpace } from "@/components/viz/EmbeddingSpace";
 import { VectorSpace3D } from "@/components/viz/VectorSpace3D";
 import { VectorSearchViz } from "@/components/viz/VectorSearchViz";
-import { MiniGraph } from "@/components/viz/MiniGraph";
 import { ContextSpace } from "@/components/viz/ContextSpace";
 import * as S from "@/content/lesson01/snippets";
 import { colabUrl } from "@/lib/paths";
@@ -269,9 +269,9 @@ export default function Lesson01() {
             <div>
               <SectionHeading
                 eyebrow="11 · Projekt"
-                accent="GraphRAG:"
-                title="wiedza zapisana jako graf"
-                lead="Dokumenty zamienione na graf encji i relacji (Neo4j). System odpowiada na pytania wymagające połączenia kilku faktów, z którymi zwykłe wyszukiwanie fragmentów tekstu sobie nie radzi. Szczegóły i zasady projektu na kolejnych zajęciach."
+                accent="Jeden projekt:"
+                title="własny system z technikami z zajęć"
+                lead="Projekt w parach, temat własny do zatwierdzenia. System łączy co najmniej 8 z 12 zagadnień kursu (w przypadku zespołu 3-osobowego, który jest dopuszczalny, jeśli grupy nie da się inaczej podzielić, wymagane jest 10 zagadnień). Propozycja tematu do 19.12.2026, prezentacje 23.01.2027."
               />
               <Reveal delay={0.3} className="mt-8">
                 <Callout>
@@ -280,9 +280,7 @@ export default function Lesson01() {
               </Reveal>
             </div>
             <Reveal delay={0.2}>
-              <Panel className="p-6">
-                <MiniGraph />
-              </Panel>
+              <ProjectTopics />
             </Reveal>
           </div>
         </Slide>

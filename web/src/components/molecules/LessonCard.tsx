@@ -2,17 +2,19 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { BookOpenText, Lock, Presentation, SquarePen } from "lucide-react";
+import { BookOpenText, FileText, Lock, Presentation, SquarePen } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { ACTIVITY_LABEL, type Lesson } from "@/content/course";
 import { cn } from "@/lib/cn";
 
 /**
- * Molekuła: kafelek zajęć. Gotowe zajęcia mają linki do prezentacji i notebooka.
+ * Molekuła: kafelek zajęć. Gotowe zajęcia mają linki do prezentacji i notebooka;
+ * zajęcia z `instructions` (np. prezentacje projektów) mają link „Instrukcje”.
  * Poświata w rogu to gradient, nie rozmyte koło: Safari nie przycina warstw z filter: blur
  * do zaokrąglonych rogów (overflow-hidden + transform), więc z rogu wystawał kwadrat.
  */
 export function LessonCard({ lesson, index }: { lesson: Lesson; index: number }) {
+  const open = lesson.ready || !!lesson.instructions;
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -21,20 +23,23 @@ export function LessonCard({ lesson, index }: { lesson: Lesson; index: number })
       transition={{ duration: 0.7, delay: (index % 4) * 0.08, ease: [0.16, 1, 0.3, 1] }}
       className={cn(
         "group relative flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border p-6",
-        lesson.ready ? "border-brand-500/40 bg-gradient-to-br from-brand-500/15 to-transparent" : "border-[var(--line)] bg-[var(--panel)]",
+        open ? "border-brand-500/40 bg-gradient-to-br from-brand-500/15 to-transparent" : "border-[var(--line)] bg-[var(--panel)]",
       )}
     >
-      {lesson.ready && <div
+      {open && <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{ background: "radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--color-brand-500) 30%, transparent), transparent 55%)" }}
         />}
       <div className="flex items-start justify-between">
         <span className="font-mono text-5xl font-light tabular-nums text-fg-subtle/70">{String(lesson.n).padStart(2, "0")}</span>
-        {!lesson.ready && <Lock className="size-4 text-fg-subtle" />}
+        <span className="flex items-center gap-2 font-mono text-xs tabular-nums text-fg-subtle">
+          <time dateTime={lesson.date.split(".").reverse().join("-")}>{lesson.date}</time>
+          {!open && <Lock className="size-4" />}
+        </span>
       </div>
       <h3 className="mt-6 text-xl font-semibold leading-snug">
-        <span className={lesson.ready ? "text-gradient" : ""}>{lesson.accent}</span> {lesson.title}
+        <span className={open ? "text-gradient" : ""}>{lesson.accent}</span> {lesson.title}
       </h3>
       <ul className="mt-3 flex-1 space-y-1 text-sm text-fg-muted">
         {lesson.topics.slice(0, 5).map((t) => (
@@ -50,6 +55,10 @@ export function LessonCard({ lesson, index }: { lesson: Lesson; index: number })
           ) : (
             lesson.activity && <Badge tone="focus">{ACTIVITY_LABEL[lesson.activity]}</Badge>
           )}
+        </div>
+      ) : lesson.instructions ? (
+        <div className="mt-5 flex flex-wrap items-center gap-2">
+          <CardLink href={lesson.instructions} icon={<FileText className="size-3.5" />} label="Instrukcje" />
         </div>
       ) : (
         <div className="mt-5">

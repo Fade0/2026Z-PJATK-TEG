@@ -6,6 +6,7 @@ export type Activity = "quiz" | "zadanie" | "test" | "skillathon" | "prezentacja
 
 export type Lesson = {
   n: number;
+  date: string; // termin zajęć, DD.MM.RRRR
   slug: string;
   title: string;
   accent: string; // pierwsze słowo/fraza tytułu wyróżniona gradientem
@@ -15,6 +16,7 @@ export type Lesson = {
   ready: boolean; // czy podstrona z prezentacją jest gotowa
   notebook?: boolean; // czy w folderze jest notebook.ipynb (strona /notebook/<slug>/)
   task?: boolean; // czy w folderze jest zadanie.ipynb (strona /notebook/<slug>-zadanie/)
+  instructions?: string; // link „Instrukcje” na kafelku zajęć bez prezentacji (np. /projekt/)
 };
 
 export const COURSE = {
@@ -28,6 +30,7 @@ export const COURSE = {
 export const LESSONS: Lesson[] = [
   {
     n: 1,
+    date: "03.10.2026",
     slug: "01-llm-embeddingi",
     title: "i embeddingi",
     accent: "LLM",
@@ -40,16 +43,20 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 2,
+    date: "17.10.2026",
     slug: "02-rag",
     title: "od podstaw do ewaluacji",
     accent: "RAG",
-    topics: ["Chunking", "Chroma i filtrowanie po metadanych", "Hybryda z BM25", "Reranking", "Ewaluacja (RAGAS)"],
+    topics: ["Chunking", "Chroma i filtrowanie po metadanych", "Hybryda z BM25", "Reranking", "Ewaluacja: hit rate, MRR, LLM jako sędzia"],
     activity: "zadanie",
     folder: "02-rag",
-    ready: false,
+    ready: true,
+    notebook: true,
+    task: true,
   },
   {
     n: 3,
+    date: "07.11.2026",
     slug: "03-agenci",
     title: "i tool calling",
     accent: "Agenci",
@@ -60,6 +67,7 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 4,
+    date: "21.11.2026",
     slug: "04-graphrag",
     title: "i grafy wiedzy",
     accent: "GraphRAG",
@@ -70,6 +78,7 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 5,
+    date: "05.12.2026",
     slug: "05-mcp-multi-agent",
     title: "i systemy wieloagentowe",
     accent: "MCP",
@@ -80,6 +89,7 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 6,
+    date: "19.12.2026",
     slug: "06-agentic-coding",
     title: "coding",
     accent: "Agentic",
@@ -90,6 +100,7 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 7,
+    date: "09.01.2027",
     slug: "07-skillathon",
     title: "",
     accent: "Skillathon",
@@ -100,18 +111,20 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 8,
+    date: "23.01.2027",
     slug: "08-prezentacje",
     title: "projektów",
     accent: "Prezentacje",
-    topics: ["Prezentacje zespołów", "Obrona: pytanie do losowej osoby", "Podsumowanie"],
+    topics: ["Prezentacje zespołów", "Demo i pytania do zespołu", "Podsumowanie"],
     activity: "prezentacja",
     folder: "08-prezentacje",
     ready: false,
+    instructions: "/projekt/",
   },
 ];
 
 export const GRADING = [
-  { label: "Projekt", points: 50, note: "stworzenie własnej bazy wiedzy GraphRAG + prezentacja" },
+  { label: "Projekt", points: 50, note: "własny system z min. 8 z 12 zagadnień kursu (zespół 3-osobowy: 10) + prezentacja" },
   { label: "Test", points: 30, note: "warunek zaliczenia: min. 50% (15 pkt)" },
   { label: "Praca na zajęciach", points: 12, note: "zadania do wykonania w trakcie zajęć lub quiz" },
   { label: "Skillathon", points: 8, note: "praca w grupach z agentem kodującym na przedostatnich zajęciach" },
@@ -133,3 +146,20 @@ export const ACTIVITY_LABEL: Record<Exclude<Activity, null>, string> = {
   skillathon: "Skillathon",
   prezentacja: "Prezentacja",
 };
+
+// Zagadnienia projektu. Pełny opis w projekt/README.md (tabela „Zagadnienia”);
+// przy zmianie listy trzeba zaktualizować oba miejsca.
+export const PROJECT_TOPICS = [
+  "Ekstrakcja danych przez LLM",
+  "Embeddingi i wyszukiwanie semantyczne",
+  "RAG z odwołaniami do źródeł",
+  "Wyszukiwanie hybrydowe i reranking",
+  "Ewaluacja",
+  "Agent z narzędziami",
+  "Pamięć i stan rozmowy",
+  "Workflow z człowiekiem w pętli",
+  "Graf wiedzy i GraphRAG",
+  "Własny serwer MCP",
+  "System wieloagentowy",
+  "Jawna logika decyzyjna",
+] as const;
